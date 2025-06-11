@@ -36,13 +36,17 @@ header {
     color: rgba(0, 0, 0, 0.699);
 }
 
+.icon-hiddenn {
+    display: none;
+}
+
 .main-1 {
     height: 750px;
 }
 
 .left1 {
-    background-color: white;
-    width: 900px;
+    background-image: url(images/Ellipse\ 10.png);
+    width: 700px;
     height: 800px;
     position: relative;
     bottom: 890px;
@@ -85,6 +89,10 @@ header {
     position: relative;
     bottom: 90px;
     height: 800px;
+}
+
+.background-hidden {
+    display: none;
 }
 
 .main-2 {
@@ -366,34 +374,6 @@ header {
     height: 70px;
 }
 
-
-.page7{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 245px;
-    background: linear-gradient(92deg, #D48C04 0%, #B35911 100%);
-}
-
-.downl-txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    margin-left: 100px;
-    color: white;
-}
-
-.icons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
-}
-
 .page8{
     display: flex;
     flex-direction: column;
@@ -495,8 +475,8 @@ header {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    width: 100px;
-    height: 100px;
+    width: 35px;
+    height: 35px;
 }
 
 .small-box{
@@ -509,9 +489,9 @@ header {
     color: white;
 }
 
-.last{
+.borderr{
     margin: 0 80px;
-    border-color: #5E5E5E ;
+    border-bottom: 1px solid #5E5E5E;
 }
 
 .last-cont{
@@ -540,4 +520,325 @@ header {
 
 button{
     cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    header {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .icon-hidden {
+        display: block;
+    }
+
+    .main-1 {
+        width: 100%;
+        height: 750px;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .background-hidden {
+        display: block;
+    }
+
+    .background-hidden img {
+        width: 100%;
+        height: 530px;
+        position: relative;
+        bottom: 90px;
+        height: 800px;
+        z-index: -2;
+    }
+
+    .left1 {
+        width: 100%;
+        height: auto;
+        background: none;
+        padding: 200px 35px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .left1 h1 {
+        font-size: 35px;
+        width: 330px;
+        height: 68;
+        display: flex;
+        text-align: center;
+    }
+
+    .left1 p {
+        font-size: 23px;
+        width: 280px;
+        height: 96px;
+    }
+
+    .left1 button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-2 {
+        padding: 0;
+    }
+
+    .top {
+        display: flex;
+        text-align: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .img-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .top-1 {
+        display: none;
+    }
+
+    .bottom-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .left-2 img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .right-2 {
+        padding: 0 0 0 15px;
+        width: 430px;
+    }
+
+    .right-2 h2 {
+        width: 400px;
+    }
+
+    .right-2 h1 {
+        width: 400px;
+    }
+    
+    .card-main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .card2 {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .main-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+    }
+
+    .main-5 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-3 img{
+        width: 400px;
+        height: 400px;
+        padding-left: 15px;
+    }
+
+    .left-3 {
+        padding: 20px;
+    }
+
+
+    .card-main1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card3 {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .card4 {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .main-6 {
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .text h1 {
+        width: 300px;
+        font-size: 40px;
+        text-align: center;
+        color: #4B4B4B;
+    }
+
+    .text p {
+        width: 300px;
+        font-size: 24px;
+    }
+
+    .main-7 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+    }
+
+    .left-4 {
+        width: 430px;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-4 h1 {
+        font-size: 36px;
+    }
+
+    .left-4 p {
+        font-size: 28px;
+        display: flex;
+        text-align: center;
+        width: 350px;
+    }
+
+    .right-4 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .page8 {
+        padding: 20px;
+        height: 1000px;
+    }
+
+    .find {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .right-img iframe{
+        width: 400px;
+        height: 400px;
+    }
+
+    .page9 {
+        display: flex;
+        width: 430px;
+        height: 650px;
+    }
+
+    .row9 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .logo9 {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .logo9 h1{
+        font-size: 50px;
+    }
+
+    .logo9 img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .iconss {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconss img{
+        width: 35px;
+    }
+
+    .small-box {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .borderr {
+        border-bottom: 1px solid #5E5E5E;
+        margin: 0 40px;
+    }
+
+    .last-cont {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .terms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copy {
+        width: 300px;
+        text-align: center;
+    }
+
 }
